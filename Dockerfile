@@ -1,4 +1,4 @@
-FROM node:22-bookworm-slim
+FROM node:20-alpine
 WORKDIR /app
 RUN corepack enable && corepack install --global pnpm@10.18.0
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
